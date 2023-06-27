@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XP48 | Météo</title>
+    <link rel="icon" type="image/jpg" href="../logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="600">
+    <link rel= "manifest" href= "manifest.json">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="overlay-icon-chargement">
+            <img src="./ressources/autres/circles-menu-1.gif" alt="logo chargement">
+        </div>
+
+        <h1>Météo d'après votre position</h1>
+
+        <div class="bloc-logo-info">
+
+            <div class="bloc-logo">
+                <img src="" alt="logo du temps qu'il fait" width="250px" class="logo-meteo">
+            </div>
+
+            <div class="bloc-info">
+                <p class="temps"></p><br>
+                <img height="40px" src="./ressources/autres/thermos.svg"><p class="temperature"></p><br>
+                <img height="40px" src="./ressources/autres/lieu.svg"><p class="localisation"></p><br>
+                <img height="40px" src="./ressources/autres/temps_soleil.svg"><p class="time"></p>
+            </div>
+
+        </div>
+
+        <div class="bloc-info2">
+            <div class="bloc-i">
+                <img class="img-humidite" src="./ressources/autres/humidite.svg">
+                <p class="humidite"></p>
+            </div>
+            <div class="bloc-i">
+                <img class="img-vent" src="./ressources/autres/wind.svg">
+                <p class="vent"></p>
+            </div>
+            <div class="bloc-i">
+                <img class="img-ventdir" src="./ressources/autres/manche_a_air.svg">
+                <p class="ventdir"></p>
+            </div>
+            <div class="bloc-i">
+                <img class="img-pression" src="./ressources/autres/pression.svg">
+                <p class="pression"></p>
+            </div>
+            
+            <div class="bloc-i">
+                <img class="img-visibility" src="./ressources/autres/view.svg">
+                <p class="visibilite"></p>
+            </div>
+            <div class="bloc-i">
+                <img class="img-uv" src="./ressources/autres/uv.svg">
+                <p class="uv"></p>
+            </div>
+            <div class="bloc-i">
+                <img height="40px" src="./ressources/autres/thermos.svg" >
+                <p class="ressenti" style="text-align: center;"></p>
+            </div>
+        </div>
+
+        <div class="titre-bloc-h">
+            <p><u>Prévision dans les heures à venir :</u></p>
+        </div>
+
+        <div class="heure-bloc-prevision">
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+            <div class="bloc-h">
+                <p class="heure-nom-prevision"></p>
+                <p class="heure-prevision-valeur"></p>
+                <img class="img-h" src="">
+            </div>
+        </div>
+
+        <div class="titre-bloc-j">
+            <p><u>Prévision dans les jours à venir :</u></p>
+        </div>
+
+        <div class="jour-prevision-bloc">
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+            <div class="bloc-j">
+                <p class="jour-prevision-nom"></p>
+                <p class="jour-prevision-temp"></p>
+                <img class="img-j" src="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+<footer>
+    <p class="credits">&copy; <a target="_blank" href="https://xp48.github.io/portfolio">XP48</a>. Tous droits réservés.<br><br>Images : &copy; <a target="_blank" href="https://drawnedspot.000webhostapp.com/"> Drawned</a><br><br>La météo est calculée grâce à l'api de <a target="_blank" href="https://openweathermap.org/api">openweathermap</a>.<br><br>La ville est affichée grâce à l'api <a target="_blank" href="https://adresse.data.gouv.fr/api-doc/adresse">adresse</a> du gouvernement.</p>
+</footer>
+</html>
+<!-- logos créés par Drawned => https://drawned.studio/ -->
